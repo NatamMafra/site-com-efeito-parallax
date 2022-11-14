@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+
+:root {
+    --fonte1: 'Roboto', sans-serif;
+    --cor1: #242424;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--fonte1);
+    color: var(--cor1);
+
+}
+
+section.parallax1 {
+    background-image: url(imagens/casa.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+section.parallax1 h1, section.parallax2 h1, section.parallax3 h1 {
+    margin: 0;
+    font-size: 3em;
+    color: white;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px black;
+}
+
+section.conteudo {
+    max-width: 60%;
+    margin:  10vh auto;
+    text-align: justify;
+}
+
+section.parallax2 {
+    background-image: url(imagens/passaro.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*
+section.parallax2 h1 {
+    margin: 0;
+    font-size: 3em;
+    color: white;
+    letter-spacing: 3px;
+    
+}
+*/
+
+section.parallax3 {
+    background-image: url(imagens/paisagem-arvores.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/*
+section.parallax3 h1 {
+    margin: 0;
+    font-size: 3em;
+    color: white;
+    letter-spacing: 3px;
+    
+}
+*/
+
+footer {
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    padding: 4px;
+    font-size: 0.8em;
+}
+
+@media only screen and (max-width: 800px) {
+    section.parallax1 h1, section.parallax2 h1, section.parallax3 h1 {
+        font-size: 2em;
+        padding-left: 5vw;
+    }
+
+    section.conteudo {
+        max-width: 80%;
+
+    }
+
+}
